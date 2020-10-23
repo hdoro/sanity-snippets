@@ -1,0 +1,31 @@
+{
+  // WIP - contributions welcome
+  "Component document view": {
+    "scope": "javascript,typescript",
+    "description": "Add a view to a document with a React component",
+    "prefix": "sanityViewComponent",
+    "body": [
+      "S.view",
+      "\t.component(${1:Component})",
+      "\t.title(${2:My component view})",
+      "\t.icon(${3:FiEdit})"
+    ]
+  },
+  "Structure document list": {
+    "scope": "javascript,typescript",
+    "description": "Adds a listItem in your desk structure for custom document list. Perfect for filtering by document values or adding docs from multiple types",
+    "prefix": "sanityDocList",
+    "body": [
+      "S.listItem()",
+      "\t.title(${1:Authors and contributors})",
+      "\t.icon(${2:FiEdit})",
+      "\t.child(",
+      "\t\tS.documentList()",
+      "\t\t\t.title(${1})",
+      "\t\t\t.filter(${3:_type in $types})",
+      "\t\t\t.params(${4:{ types: ['author', 'contributor'] }})",
+      "\t\t\t.menuItems(...S.documentTypeList(${5:menuSchemaType}).getMenuItems())",
+      "\t),"
+    ]
+  }
+}

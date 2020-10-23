@@ -1,0 +1,34 @@
+{
+    "name": "sanity-snippets",
+    "displayName": "Sanity.io snippets",
+    "description": "Speed up your Sanity.io development with snippets tailored for building schemas and desk structures ✨",
+    "version": "0.1.0",
+    "author": {
+        "email": "opensource@hdoro.dev",
+        "name": "Henrique Doro",
+        "url": "https://hdoro.dev"
+    },
+    "engines": {
+        "vscode": "^1.50.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "keywords": [
+        "Sanity.io",
+        "Headless CMS",
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/schema.code-snippets"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/structure.code-snippets"
+            }
+        ]
+    }
+}

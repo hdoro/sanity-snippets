@@ -1,0 +1,11 @@
+{
+  // WIP - contributions welcome
+  "GROQ block drafts constraint": {
+    "scope": "javascript,typescript",
+    "description": "Constraint for groq queries to prevent or limit to drafted documents",
+    "prefix": "groqDraftConstraint",
+    "body": [
+      "!(_id in path(\"drafts.**\"))"
+    ]
+  }
+}
