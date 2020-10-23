@@ -4,7 +4,7 @@
 
 A set of useful snippets to speed up your Sanity.io development. I've been using some of these snippets for 2.5 years now, and they drastically increase my capacity to deliver fast and precisely, hope you enjoy 😊
 
-![GIF showing a demo of the snippets in action - it creates an article schema in ~40s](media/demo-video.gif)
+![GIF showing a demo of the snippets in action - it creates an article schema in ~40s](https://raw.githubusercontent.com/hdoro/sanity-snippets/main/media/demo-video.gif)
 
 ## The snippets available
 
