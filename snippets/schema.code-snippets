@@ -2,7 +2,6 @@
   // WIP - contributions welcome
   // BASIC SCHEMAS
   "Sanity Schema": {
-    "scope": "javascript,typescript",
     "description": "Create a simple schema for the CMS (document, object or image)",
     "prefix": "sanitySchema",
     "body": [
@@ -15,13 +14,12 @@
       "\t\t\tname: '${4:title}',",
       "\t\t\ttitle: '${5:Title}',",
       "\t\t\ttype: '${6:string}',",
-      "\t\t}",
+      "\t\t},",
       "\t],",
       "}"
     ]
   },
   "Sanity Field": {
-    "scope": "javascript,typescript",
     "description": "Add a field to a sanity object / document",
     "prefix": "sanityFld",
     "body": [
@@ -34,31 +32,26 @@
   },
   // DESCRIPTION & CUES/STRUCTURE FOR EDITORS
   "Sanity Custom Description": {
-    "scope": "javascript,typescript",
     "description": "Add a custom description to a field, document or object",
     "prefix": "sanityDesc",
     "body": ["description: '${1:description}',"]
   },
   "Sanity Optional": {
-    "scope": "javascript,typescript",
     "description": "Add a cue that a field is optional",
     "prefix": "sanityOptional",
     "body": ["description: '${1:❓ Optional}${0}',"]
   },
   "Sanity Optional Encouraged": {
-    "scope": "javascript,typescript",
     "description": "Add a cue that a field is optional, but encourage writing it",
     "prefix": "sanityOptionalEncouraged",
     "body": ["description: '${1:⚡ Optional but highly encouraged}${0}',"]
   },
   "Sanity Tip description": {
-    "scope": "javascript,typescript",
     "description": "Add a tip as a field's description",
     "prefix": "sanityTip",
     "body": ["description: '💡 ${1:tip here}',"]
   },
   "Sanity Fieldset": {
-    "scope": "javascript,typescript",
     "description": "Add fieldsets to a sanity object / document",
     "prefix": "sanityFieldset",
     "body": [
@@ -72,20 +65,17 @@
     ]
   },
   "Sanity Collapse Field": {
-    "scope": "javascript,typescript",
     "description": "Make a given field required",
     "prefix": "sanityCollapse",
     "body": ["options: { collapsible: true, ${0:collapsed: false,}},"]
   },
   // VALIDATION
   "Sanity Required": {
-    "scope": "javascript,typescript",
     "description": "Make a given field required",
     "prefix": "sanityRequired",
     "body": ["validation: Rule => Rule.required(),"]
   },
   "Sanity Array Validation (min & max)": {
-    "scope": "javascript,typescript",
     "description": "Validate an array field based on its length",
     "prefix": "sanityArrValidation",
     "body": [
@@ -93,14 +83,13 @@
       "\tRule.required()",
       "\t\t.min(${1:1})",
       "\t\t.max(${2:2})",
-      "\t\t.${4:error}('${0}Required field with at least ${1:1} and at most ${2:2} ${3:entries}.'),",
+      "\t\t.${4:error}('Required field with at least ${1:1} and at most ${2:2} ${3:entries}.'),",
       "\t${0:Rule.unique()}",
       "]"
     ]
   },
   // SPECIALIZED SCHEMA TYPES
   "Sanity Basic Array": {
-    "scope": "javascript,typescript",
     "description": "Create a basic array field in Sanity",
     "prefix": "sanityArrFld",
     "body": [
@@ -113,7 +102,6 @@
     ]
   },
   "Sanity Reference Field": {
-    "scope": "javascript,typescript",
     "description": "Create a basic reference field in Sanity",
     "prefix": "sanityRefFld",
     "body": [

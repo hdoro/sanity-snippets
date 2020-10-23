@@ -1,6 +1,7 @@
 {
     "name": "sanity-snippets",
     "displayName": "Sanity.io snippets",
+    "publisher": "hdoro",
     "description": "Speed up your Sanity.io development with snippets tailored for building schemas and desk structures ✨",
     "version": "0.1.0",
     "author": {
@@ -8,6 +9,7 @@
         "name": "Henrique Doro",
         "url": "https://hdoro.dev"
     },
+    "repository": "https://github.com/hdoro/sanity-snippets",
     "engines": {
         "vscode": "^1.50.0"
     },
@@ -26,8 +28,28 @@
                 "path": "./snippets/schema.code-snippets"
             },
             {
+                "language": "typescript",
+                "path": "./snippets/schema.code-snippets"
+            },
+            {
                 "language": "javascript",
                 "path": "./snippets/structure.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/structure.code-snippets"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/groq.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/groq.code-snippets"
+            },
+            {
+                "language": "groq",
+                "path": "./snippets/groq.code-snippets"
             }
         ]
     }
