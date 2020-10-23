@@ -17,7 +17,7 @@ Every snippets starts with either `sanity(...)` or `groq(...)`, so you know they
 - **Sanity Optional Encouraged** (`sanityOptionalEncouraged`): Add a cue that a field is optional, but encourage writing it
 - **Sanity Tip description** (`sanityTip`): Add a tip as a field's description
 - **Sanity Fieldset** (`sanityFieldset`): Add fieldsets to a sanity object / document
-- **Sanity Collapse Field** (`sanityCollapse`): Make a given field collapsible
+- **Sanity Collapse Field** (`sanityCollapse`): Make a given object field collapsible to help editors scroll less through the document
 - **Sanity Required** (`sanityRequired`): Make a given field required
 - **Sanity Array Validation (min & max)** (`sanityArrValidation`): Validate an array field based on its length
 - **Sanity Basic Array** (`sanityArrFld`): Create a basic array field in Sanity

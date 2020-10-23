@@ -65,7 +65,7 @@
     ]
   },
   "Sanity Collapse Field": {
-    "description": "Make a given field required",
+    "description": "Make a given object field collapsible to help editors scroll less through the document",
     "prefix": "sanityCollapse",
     "body": ["options: { collapsible: true, ${0:collapsed: false,}},"]
   },
