@@ -22,9 +22,14 @@ Every snippets starts with either `sanity(...)` or `groq(...)`, so you know they
 - **Sanity Array Validation (min & max)** (`sanityArrValidation`): Validate an array field based on its length
 - **Sanity Basic Array** (`sanityArrFld`): Create a basic array field in Sanity
 - **Sanity Reference Field** (`sanityRefFld`): Create a basic reference field in Sanity
+- **Sanity Preview with Select** (`sanityPreviewSelect`): Add a basic preview with selection object in Sanity
+- **Sanity Preview with Select and Prepare** (`sanityPreviewSelectPrepare`): Add a preview with selection object and prepare function in Sanity
+- **Sanity Select Object** (`sanitySelect`): Add a basic selection object for preview in Sanity
+- **Sanity Prepare Function** (`sanityPrepare`): Add a prepare function for preview in Sanity
 - **GROQ block drafts constraint** (`groqDraftConstraint`): Constraint for groq queries to prevent or limit to drafted documents
 - **Component document view** (`sanityViewComponent`): Add a view to a document with a React component
 - **Structure document list** (`sanityDocList`): Adds a listItem in your desk structure for custom document list. Perfect for filtering by document values or adding docs from multiple types
+
 
 Feel free to contribute your snippets!
 

@@ -112,5 +112,62 @@
       "\tto: [{ type: '${3:author}' }],",
       "},"
     ]
+  },
+  "Sanity Preview with Select": {
+    "description": "Add a basic preview with selection object in Sanity",
+    "prefix": "sanityPreviewSelect",
+    "body": [
+      "preview: {",
+      "\tselect: {",
+      "\t\ttitle: '${1:title}',",
+      "\t\tsubtitle: '${2:subtitle}',",
+      "\t\tmedia: '${3:image}',",
+      "\t},",
+      "},"
+    ]
+  },
+  "Sanity Select Object": {
+    "description": "Add a basic selection object for preview in Sanity",
+    "prefix": "sanitySelect",
+    "body": [
+      "\tselect: {",
+      "\t\ttitle: '${1:title}',",
+      "\t\tsubtitle: '${2:subtitle}',",
+      "\t\tmedia: '${3:image}',",
+      "\t},"
+    ]
+  },
+  "Sanity Prepare Function": {
+    "description": "Add a prepare function for preview in Sanity",
+    "prefix": "sanityPrepare",
+    "body": [
+      "prepare({ title, subtitle, media }) {",
+      "\treturn {",
+      "\t\ttitle: `${1:${title\\}}`,",
+      "\t\tsubtitle: `${2:${subtitle\\}}`,",
+      "\t\tmedia,",
+      "\t};",
+      "},"
+    ]
+  },
+  "Sanity Preview with Select and Prepare*": {
+    "description": "Add a preview with selection object and prepare function in Sanity",
+    "prefix": "sanityPreviewSelectPrepare",
+    "body": [
+      "preview: {",
+      "\tselect: {",
+      "\t\ttitle: '${1:title}',",
+      "\t\tsubtitle: '${2:subtitle}',",
+      "\t\tmedia: '${3:image}',",
+      "\t},",
+      "\tprepare({ title, subtitle, media }) {",
+      "\t\treturn {",
+      "\t\t\ttitle: `${4:\\${title\\}}`,",
+      "\t\t\tsubtitle: `${5:\\${subtitle\\}}`,",
+      "\t\t\tmedia,",
+      "\t\t};",
+      "\t},",
+      "},"
+    ]
   }
 }
