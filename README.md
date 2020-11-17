@@ -21,6 +21,7 @@ Every snippets starts with either `sanity(...)` or `groq(...)`, so you know they
 - **Sanity Required** (`sanityRequired`): Make a given field required
 - **Sanity Array Validation (min & max)** (`sanityArrValidation`): Validate an array field based on its length
 - **Sanity Basic Array** (`sanityArrFld`): Create a basic array field in Sanity
+- **Sanity Basic Object** (`sanityObjFld`): Create a basic object field in Sanity
 - **Sanity Reference Field** (`sanityRefFld`): Create a basic reference field in Sanity
 - **Sanity Preview with Select** (`sanityPreviewSelect`): Add a basic preview with selection object in Sanity
 - **Sanity Preview with Select and Prepare** (`sanityPreviewSelectPrepare`): Add a preview with selection object and prepare function in Sanity
