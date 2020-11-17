@@ -112,5 +112,19 @@
       "\tto: [{ type: '${3:author}' }],",
       "},"
     ]
-  }
+  },
+  "Sanity Object Field": {
+    "description": "Create a basic object field in Sanity",
+    "prefix": "sanityObjFld",
+    "body": [
+      "{",
+      "\tname: '${1:name}',",
+      "\ttitle: '${2:title}',",
+      "\ttype: 'object',",
+      "\tfields: [",
+      "\t\t$3",
+      "\t],",
+      "},"
+    ]
+  },
 }
