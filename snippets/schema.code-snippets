@@ -101,6 +101,18 @@
       "},"
     ]
   },
+   "Sanity Basic Document with a Field": {
+    "description": "Create a basic document type with a field in Sanity",
+    "prefix": "sanityDocType",
+    "body": [
+      "{",
+      "\tname: '${1:name}',",
+      "\ttitle: '${2:title}',",
+      "\ttype: 'document',",
+      "\tfields: [{ name: '${3:string}', type: '${4:type}', title: '${5:title}' }],",
+      "},"
+    ]
+  },
   "Sanity Reference Field": {
     "description": "Create a basic reference field in Sanity",
     "prefix": "sanityRefFld",
