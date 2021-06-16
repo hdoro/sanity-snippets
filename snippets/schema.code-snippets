@@ -8,7 +8,7 @@
       "export default {",
       "\tname: '${1:$TM_FILENAME_BASE}',",
       "\ttitle: '${2:$TM_FILENAME_BASE}',",
-      "\ttype: '${3|object,document,image|}',",
+      "\ttype: '${3|document,object,image|}',",
       "\tfields: [",
       "\t\t{",
       "\t\t\tname: '${4:title}',",
