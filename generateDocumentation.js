@@ -24,4 +24,4 @@ const documented = Object.keys(allSnippets).map(generateSnippetDocumentation).jo
 
 fs.writeFileSync('./documented.md', documented, { encoding: 'utf-8'})
 
-console.log("Now copy documented.md into README.md")
+console.log("Snippets list generated!\n\n👉 Now copy documented.md into README.md")

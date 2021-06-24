@@ -1,6 +1,4 @@
 {
-  // WIP - contributions welcome
-  // BASIC SCHEMAS
   "Sanity Schema": {
     "description": "Create a simple schema for the CMS (document, object or image)",
     "prefix": "sanitySchema",
@@ -30,7 +28,6 @@
       "},"
     ]
   },
-  // DESCRIPTION & CUES/STRUCTURE FOR EDITORS
   "Sanity Custom Description": {
     "description": "Add a custom description to a field, document or object",
     "prefix": "sanityDesc",
@@ -69,7 +66,6 @@
     "prefix": "sanityCollapse",
     "body": ["options: { collapsible: true, ${0:collapsed: false,}},"]
   },
-  // VALIDATION
   "Sanity Required": {
     "description": "Make a given field required",
     "prefix": "sanityRequired",
@@ -88,7 +84,6 @@
       "]"
     ]
   },
-  // SPECIALIZED SCHEMA TYPES
   "Sanity Basic Array": {
     "description": "Create a basic array field in Sanity",
     "prefix": "sanityArrFld",
@@ -195,5 +190,5 @@
       "\t],",
       "},"
     ]
-  },
+  }
 }

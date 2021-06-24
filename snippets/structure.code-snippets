@@ -1,5 +1,4 @@
 {
-  // WIP - contributions welcome
   "Component document view": {
     "scope": "javascript,typescript",
     "description": "Add a view to a document with a React component",
@@ -17,7 +16,7 @@
     "prefix": "sanityDocList",
     "body": [
       "S.listItem()",
-      "\t.title(${1:"Authors and contributors"})",
+      "\t.title(${1:\"Authors and contributors\"})",
       "\t.icon(${2:FiEdit})",
       "\t.child(",
       "\t\tS.documentList()",
