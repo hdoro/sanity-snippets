@@ -183,5 +183,17 @@
       "\t],",
       "},"
     ]
-  }
+  },
+  "Sanity list of options": {
+    "description": "Add a list array to string/number/array types to render specific options to users.\n🚨 For arrays, this only works if it's an array of strings, in which case it'll render checkboxes",
+    "prefix": "sanityListArray",
+    "body": [
+      "options: {",
+      "\tayout: ${3:|radio,select|}",
+      "\tlist: [",
+      "\t\t{ title: ${1:Option 1}, value: ${2:option1} },",
+      "\t],",
+      "},"
+    ]
+  },
 }
