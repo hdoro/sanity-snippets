@@ -6,9 +6,9 @@
     "prefix": "sanitySchema",
     "body": [
       "export default {",
-      "\tname: '${1:$TM_FILENAME_BASE}',",
-      "\ttitle: '${2:$TM_FILENAME_BASE}',",
-      "\ttype: '${3|document,object,image|}',",
+      "\tname: '${2:$TM_FILENAME_BASE}',",
+      "\ttitle: '${3:${TM_FILENAME_BASE/(^.)|([A-Z](?=[a-z]))/${1:/upcase}${2:+ }${2:/downcase}/g}}',",
+      "\ttype: '${1|document,object,image|}',",
       "\tfields: [",
       "\t\t{",
       "\t\t\tname: '${4:title}',",
@@ -25,7 +25,7 @@
     "body": [
       "{",
       "\tname: '${1:name}',",
-      "\ttitle: '${2:title}',",
+      "\ttitle: '${2:${1/(^.)|([A-Z](?=[a-z]))/${1:/upcase}${2:+ }${2:/downcase}/g}}',",
       "\ttype: '${3:type}',",
       "},"
     ]
@@ -58,7 +58,7 @@
       "fieldsets: [",
       "\t{",
       "\t\tname: '${1:name}',",
-      "\t\ttitle: '${2:title}',",
+      "\t\ttitle: '${2:${1/(^.)|([A-Z](?=[a-z]))/${1:/upcase}${2:+ }${2:/downcase}/g}}',",
       "\t\t${0:options: { collapsible: true, collapsed: true }},",
       "\t},",
       "],"
@@ -95,7 +95,7 @@
     "body": [
       "{",
       "\tname: '${1:name}',",
-      "\ttitle: '${2:title}',",
+      "\ttitle: '${2:${1/(^.)|([A-Z](?=[a-z]))/${1:/upcase}${2:+ }${2:/downcase}/g}}',",
       "\ttype: 'array',",
       "\tof: [{ type: '${3:string}' }],",
       "},"
@@ -107,7 +107,7 @@
     "body": [
       "{",
       "\tname: '${1:name}',",
-      "\ttitle: '${2:title}',",
+      "\ttitle: '${2:${1/(^.)|([A-Z](?=[a-z]))/${1:/upcase}${2:+ }${2:/downcase}/g}}',",
       "\ttype: 'reference',",
       "\tto: [{ type: '${3:author}' }],",
       "},"
@@ -189,9 +189,9 @@
     "prefix": "sanityListArray",
     "body": [
       "options: {",
-      "\tayout: ${3:|radio,select|}",
+      "\tlayout: '${3|radio,select|}'",
       "\tlist: [",
-      "\t\t{ title: ${1:Option 1}, value: ${2:option1} },",
+      "\t\t{ value: '${1:option1}', title: '${2:${1/(^.)|([A-Z](?=[a-z]))/${1:/upcase}${2:+ }${2:/downcase}/g}}' },",
       "\t],",
       "},"
     ]
