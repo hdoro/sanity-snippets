@@ -3,7 +3,7 @@
   "displayName": "Sanity.io snippets",
   "publisher": "hdoro",
   "description": "Speed up your Sanity.io development with snippets tailored for building schemas and desk structures ✨",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "author": {
     "email": "opensource@hdoro.dev",
     "name": "Henrique Doro",
@@ -60,5 +60,8 @@
         "path": "./snippets/groq.code-snippets"
       }
     ]
+  },
+  "scripts": {
+    "packageAndPublish": "vsce package && vsce publish"
   }
 }
