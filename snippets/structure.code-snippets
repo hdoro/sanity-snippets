@@ -1,6 +1,6 @@
 {
   "Component document view": {
-    "scope": "javascript,typescript",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "description": "Add a view to a document with a React component",
     "prefix": "sanityViewComponent",
     "body": [
@@ -11,7 +11,7 @@
     ]
   },
   "Structure document list": {
-    "scope": "javascript,typescript",
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
     "description": "Adds a listItem in your desk structure for custom document list. Perfect for filtering by document values or adding docs from multiple types",
     "prefix": "sanityDocList",
     "body": [
